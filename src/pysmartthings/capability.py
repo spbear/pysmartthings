@@ -7,6 +7,10 @@ class Capability(StrEnum):
     """Capability model."""
 
     ACCELERATION_SENSOR = "accelerationSensor"
+    AFTERGUIDE46998_FREEZE = "afterguide46998.freeze"
+    AFTERGUIDE46998_INOUTDIRECTIONV2 = "afterguide46998.inOutDirectionV2"
+    AFTERGUIDE46998_PEOPLECOUNTERV2 = "afterguide46998.peopleCounterV2"
+    AFTERGUIDE46998_UPDOWN = "afterguide46998.updown"
     ACTIVITY_LIGHTING_MODE = "activityLightingMode"
     ACTIVITY_SENSOR = "activitySensor"
     ACTUATOR = "actuator"

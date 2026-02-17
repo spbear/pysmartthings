@@ -690,6 +690,7 @@ class Attribute(StrEnum):
     PERIODIC_SENSING = "periodicSensing"
     PERIODIC_SENSING_INTERVAL = "periodicSensingInterval"
     PERIODIC_SENSING_STATUS = "periodicSensingStatus"
+    PEOPLE_COUNTER = "peopleCounter"
     PERSON_DETECTION = "personDetection"
     PEST_CONTROL = "pestControl"
     PET_ACTIVITY = "petActivity"
@@ -1271,6 +1272,7 @@ class Attribute(StrEnum):
 
 CAPABILITY_ATTRIBUTES: dict[Capability, list[Attribute]] = {
     Capability.ACCELERATION_SENSOR: [Attribute.ACCELERATION],
+    Capability.AFTERGUIDE46998_PEOPLECOUNTERV2: [Attribute.PEOPLE_COUNTER],
     Capability.ACTIVITY_LIGHTING_MODE: [Attribute.LIGHTING_MODE],
     Capability.ACTIVITY_SENSOR: [Attribute.ACTIVITY],
     Capability.ACTUATOR: [],
@@ -1651,7 +1653,7 @@ CAPABILITY_ATTRIBUTES: dict[Capability, list[Attribute]] = {
     Capability.NITROGEN_DIOXIDE_MEASUREMENT: [Attribute.NITROGEN_DIOXIDE],
     Capability.NOTIFICATION: [],
     Capability.OBJECT_DETECTION: [Attribute.DETECTED, Attribute.SUPPORTED_VALUES],
-    Capability.OCCUPANCY_SENSOR: [Attribute.OCCUPANCY],
+    Capability.OCCUPANCY_SENSOR: [Attribute.OCCUPANCY, Attribute.PEOPLE_COUNTER],
     Capability.OCF: [
         Attribute.DATA_MODEL_VERSION,
         Attribute.DEVICE_NAME,

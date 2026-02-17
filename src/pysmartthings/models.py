@@ -155,6 +155,7 @@ class Category(StrEnum):
     GAS_VALVE = "GasValve"
     GAS_METER = "GasMeter"
     GENERIC_SENSOR = "GenericSensor"
+    GENERIC_SENSOR_2 = "Generic Sensor"
     HEALTH_TRACKER = "HealthTracker"
     HEATED_MATTRESS_PAD = "Heatedmattresspad"
     HOME_THEATER = "HomeTheater"
