@@ -598,6 +598,7 @@ class Command(StrEnum):
     SET_WIRELESS_OPERATING_MODE = "setWirelessOperatingMode"
     SET_YEAR_DAY_SCHEDULE = "setYearDaySchedule"
     SET_ZONE_BOOSTER = "setZoneBooster"
+    SET_PEOPLE_COUNTER = "setPeopleCounter"
     SETV_HUMIDITY = "setvHumidity"
     SETV_TEMP = "setvTemp"
     SHOW_MESSAGE = "showMessage"
@@ -660,6 +661,7 @@ class Command(StrEnum):
 
 CAPABILITY_COMMANDS: dict[Capability, list[Command]] = {
     Capability.ACCELERATION_SENSOR: [],
+    Capability.AFTERGUIDE46998_PEOPLECOUNTERV2: [Command.SET_PEOPLE_COUNTER],
     Capability.ACTIVITY_LIGHTING_MODE: [Command.SET_LIGHTING_MODE],
     Capability.ACTIVITY_SENSOR: [],
     Capability.ACTUATOR: [],
